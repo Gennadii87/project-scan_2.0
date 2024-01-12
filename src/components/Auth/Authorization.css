@@ -25,13 +25,26 @@
     border-radius: 10px;
     margin: 40px 70px 0px 0px;
 }
-.main__title{
-    font-family: 'Ferry', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    width: 682px;
-    font-size: 40px;
-    text-transform: lowercase;
-    line-height: 48px;
+@media (min-width:900px) {
+    .main__title{
+        font-family: 'Ferry', Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        width: 682px;
+        font-size: 40px;
+        text-transform: lowercase;
+        line-height: 48px;
+        margin-left: 50px;
+    }
+}
+@media (max-width:899px) {
+    .main__title{
+        font-family: 'Ferry', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        width: 352px;
+        font-size: 30px;
+        text-transform: lowercase;
+        line-height: 40px;
+    }
 }
 .main__image{
     margin-left: 50px;
@@ -77,7 +90,7 @@
 }
 @media screen and (max-width:600px) {
     .main__rightBox{
-        width: 95%;
+        width: 94%;
     }
 }
     
