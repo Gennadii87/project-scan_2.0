@@ -10,3 +10,11 @@
     логин: sf_student1 | пароль - 4i2385j
 
 Для теста используйте следующие ИНН: 7706074737 или 7710416415
+
+Для проверки http запросов используем postman 
+для проверки авторизации: POST запросе  https://gateway.scan-interfax.ru/api/v1/account/login  
+        В body - key: {login  password}  value: {соответсвующие параметры}, далее получаем токен авторизации!
+
+для проверки токена авторизации: в GET запросе https://gateway.scan-interfax.ru/api/v1/account/info выставляем авторизацию по токену Bearer! и получаем ответ! 
+                   
+                   
