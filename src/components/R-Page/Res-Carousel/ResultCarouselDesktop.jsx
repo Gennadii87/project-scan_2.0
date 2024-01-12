@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ResultCarousel.css';
 import Slider from 'react-slick';
 import { useSelector } from 'react-redux';
@@ -19,7 +19,7 @@ const ResultCarouselDesktop = () => {
     return <Chevron {...props} />;
   };
 
-  const shouldShowArrows = resultsLoaded && summary && summary.length > 0;
+  const shouldShowArrows = summary && summary.length > 0;
 
   const settings = {
     slidesToScroll: 1,
@@ -32,6 +32,13 @@ const ResultCarouselDesktop = () => {
     prevArrow: shouldShowArrows ? <Arrow direction="left" /> : null,
   };
 
+  useEffect(() => {
+    // Устанавливаем, что результаты загружены при изменении summary
+    if (summary && summary.length > 0) {
+      setResultsLoaded(true);
+    }
+  }, [summary]);
+
   return (
     <div className='greenBlock'>
       <div className='sections'>
@@ -40,13 +47,9 @@ const ResultCarouselDesktop = () => {
         <section>Риски</section>
       </div>
       <div className='slider-wrapper'>
-        <Slider
-          {...settings}
-          afterChange={() => {
-            setResultsLoaded(true);
-          }}
-        >
-          {summary &&
+        <Slider {...settings}>
+          {resultsLoaded &&
+            summary &&
             summary.map((period, ind) => (
               <Period key={ind} className='periodItemCss' date={period.date} total={period.total} risk={period.risk} />
             ))}
