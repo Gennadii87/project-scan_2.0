@@ -1,9 +1,9 @@
 .footer{
-    margin-top: 65px ;
+    margin-top: 80px ;
     background-color: #029491;
 }
 .footer__wrapper{
-    width: 96vw;
+    width: 92vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
