@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axiosInstance from "./axiosInstance";
-import { objectSearchToSummary } from '../applications/objectSearchToSummary';
-import { returnIdsArray } from '../applications/ReturnIdsArray';
 
 export const histogramsFetch = async (data) => {
   const response = await axiosInstance.post('objectsearch/histograms', data);
@@ -41,6 +39,18 @@ export const getDocuments = createAsyncThunk(
     return data;
   }
 );
+
+export const objectSearchToSummary = (data) => {
+  return data[0].data.map(item=>({
+      date:item.date,
+      total:item.value,
+      risk:data[1].data.find(riskItem=>(item.date===riskItem.date)).value
+  }))   
+};
+
+const returnIdsArray = (data) => {
+  return data.items.map(idObj => idObj.encodedId)
+};
 
 const extraReducers = (builder) => {
   builder
