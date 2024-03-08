@@ -30,7 +30,7 @@
     "static/media/slick.woff": "./project-scan_2.0/static/media/slick.295183786cd8a1389865.woff",
     "static/media/left-chevron.svg": "./project-scan_2.0/static/media/left-chevron.70fed5f9d8d35d342170fb95963c24db.svg",
     "static/media/right-chevron.svg": "./project-scan_2.0/static/media/right-chevron.72d47462738646245861d715c3e2dc2a.svg",
-    "index.html": "./project-scan_2.0/index.html",
+    "index.html": "index.html",
     "static/media/closeBtn.svg": "./project-scan_2.0/static/media/closeBtn.0c4eea1d82322cb8c26d.svg",
     "static/media/mobile.svg": "./project-scan_2.0/static/media/mobile.60c89216c6a87a4e1948cd30a4b0e7b2.svg",
     "static/media/verticalSlash.svg": "./project-scan_2.0/static/media/verticalSlash.cc81253728748da232750e1c104c8add.svg",
