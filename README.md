@@ -18,6 +18,7 @@
 
 для проверки токена авторизации: в GET запросе `https://gateway.scan-interfax.ru/api/v1/account/info` выставляем авторизацию по токену Bearer! и получаем ответ!<br/>
 <hr/>
+
 {**EN**}
 "SCAN" is a service for searching publications about companies by TIN (Taxpayer Identification Number). The service is designed for PR managers, communications specialists, and risk and security professionals. It addresses a wide range of tasks related to media analytics.
 
