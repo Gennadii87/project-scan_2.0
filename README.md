@@ -8,9 +8,9 @@
     2.Выполнить npm start (проект должен запуститься без ошибок)
 
 Для авторизации можно использовать пользователя
-    логин: sf_student1 | пароль - 4i2385j
+    логин: <code>sf_student1</code> | пароль - <code>4i2385j</code>
 
-Для теста используйте следующие ИНН: 7706074737 или 7710416415
+Для теста используйте следующие ИНН:<code>7706074737</code> или <code>7710416415</code>
 
 Для проверки http запросов используем postman 
 для проверки авторизации: POST запросе  https://gateway.scan-interfax.ru/api/v1/account/login  
@@ -27,7 +27,7 @@ To launch the project, follow these steps:
 
 Execute the command npm install (all dependencies should be installed).
 Execute npm start (the project should start without errors).
-For authorization, you can use the following login credentials: username - sf_student1 | password - 4i2385j.
+For authorization, you can use the following login credentials: username - <code>sf_student1</code> | <code>password - 4i2385j</code>.
 
-For testing purposes, use the following TIN (Taxpayer Identification Numbers): 7706074737 or 7710416415.
+For testing purposes, use the following TIN (Taxpayer Identification Numbers): <code>7706074737</code> or <code>7710416415</code>.
                    
